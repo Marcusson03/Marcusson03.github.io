@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel familiar</title>
+  <meta name="description" content="Panel familiar: una pantalla privada de casa que muestra el calendario de la familia.">
+  <style>
+    :root { color-scheme: light dark; --bg: #f7eee2; --card: #fffdf9; --text: #221d18; --muted: #6e6358; --accent: #c8243b; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #1c1814; --card: #26211c; --text: #f3ebe0; --muted: #b3a796; --accent: #ff6b7d; } }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+    .card { background: var(--card); border-radius: 18px; padding: 28px 24px; box-shadow: 0 1px 3px rgb(60 40 20 / 0.12); }
+    h1 { margin: 0 0 8px; font-size: 32px; }
+    h2 { margin: 28px 0 6px; font-size: 20px; }
+    p, li { color: var(--text); }
+    .lead { color: var(--muted); margin-top: 0; }
+    a { color: var(--accent); }
+    footer { margin-top: 24px; color: var(--muted); font-size: 14px; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>📅 Panel familiar</h1>
+      <p class="lead">Una pantalla privada en la pared de casa con el calendario de la familia.</p>
+
+      <h2>Qué es</h2>
+      <p>Panel familiar es una aplicación de uso doméstico, hecha para una sola familia. Funciona en un
+        pequeño servidor dentro de casa y se ve en una tablet colgada en la pared. No es un servicio
+        público: no tiene registro de usuarios ni se puede usar desde fuera de la red de casa.</p>
+
+      <h2>Para qué usa Google Calendar</h2>
+      <ul>
+        <li>Mostrar en la tablet los eventos de los calendarios de la familia.</li>
+        <li>Crear, cambiar o borrar eventos desde la tablet, cuando un adulto de la familia lo decide.</li>
+      </ul>
+      <p>Solo accede a los calendarios de la propia familia, con el permiso que ella misma ha dado.</p>
+
+      <h2>Privacidad</h2>
+      <p>Los datos del calendario no salen de casa ni se comparten con nadie. Más detalles en la
+        <a href="privacidad.html">política de privacidad</a>.</p>
+    </div>
+    <footer>Panel familiar · uso privado y doméstico · <a href="privacidad.html">Privacidad</a></footer>
+  </main>
+</body>
+</html>
